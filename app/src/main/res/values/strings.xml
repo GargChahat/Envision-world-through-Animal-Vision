@@ -1,0 +1,21 @@
+<resources>
+ <string name="app_name"> com.example.animalvision</string>
+ <string name="login"> Login</string>
+ <string name="email"> xyz@gmail.com</string>string>
+ <string name="loading">Loading...\nPlease Wait...\n\nAnimal Vision App</string>
+ <string name="submit"> Submit</string>
+ <string name="newaccount"><u>Do not have account</u></string>
+ <string name="prevaccount"><u>Already having account</u></string>
+ <string name="signup"> Sign Up</string>
+ <string name="name"> UserName</string>
+ <string name="phone_no">98765xxxxxx</string>
+ <string name="password">Password</string>
+ <string name="con">Confirm Password</string>
+ <string name="getting_started">Getting Started!</string>
+ <string name="close_drawer">Close Drawer</string>
+ <string name="open_drawer">Open Drawer</string>
+ <string name="shared_preferences">SPreference</string>
+ >
+
+
+</resources>

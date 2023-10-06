@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="rregisterViewModel"
+            type="com.example.animalvision.RegisterViewModel" />
+    </data>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/sign_prog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_brown"
+        android:elevation="11dp"
+
+        android:gravity="center"
+        android:text="@string/loading"
+        android:textColor="@color/creme"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@color/creme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/creme">
+
+            <TextView
+                android:id="@+id/signup_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/signup"
+                android:textColor="@color/dark_brown"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+
+            <EditText
+                android:id="@+id/signup_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/signup_txt1"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bg_et"
+                android:drawableStart="@drawable/ic_name"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:hint="@string/name"
+            android:text="@={rregisterViewModel.inputusername}"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textColor="@color/creme"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/light_brown" />
+
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/signup_name"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bg_et"
+                android:drawableStart="@drawable/ic_email"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:text="@={rregisterViewModel.inputemail}"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textColor="@color/creme"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/light_brown" />
+
+            <EditText
+                android:id="@+id/signup_phno"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/signup_email"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bg_et"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:hint="@string/phone_no"
+                android:text="@={rregisterViewModel.inputphoneno}"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:textColor="@color/creme"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/light_brown" />
+
+
+            <EditText
+                android:id="@+id/signup_pass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/signup_phno"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bg_et"
+                android:backgroundTint="@color/light_brown"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:text="@={rregisterViewModel.inputpassword}"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="@color/creme"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/signup_con_pass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/signup_pass"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bg_et"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:hint="@string/con"
+                android:text="@={rregisterViewModel.cnfminputpassword}"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="@color/creme"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/light_brown" />
+
+            <Button
+                android:id="@+id/signup_sgnbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/signup_con_pass"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bg_btn"
+                android:backgroundTint="@color/dark_brown"
+                android:gravity="center"
+                android:onClick="@{() ->  rregisterViewModel.onSubmit()}"
+                android:text="@string/signup"
+                android:textColor="@color/creme"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/signup_loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@id/signup_sgnbtn"
+                android:background="@drawable/bg_btn"
+                android:backgroundTint="@color/creme"
+                android:gravity="center"
+                android:text="@string/prevaccount"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+</layout>
+
+

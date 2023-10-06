@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <jp.co.cyberagent.android.gpuimage.GPUImageView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:gpuimage_show_loading="false"
+        app:layout_constraintEnd_toEndOf="@+id/frog_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </jp.co.cyberagent.android.gpuimage.GPUImageView>
+
+    <Button
+        android:id="@+id/frog_btn"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:padding="0dp"
+        android:text="frog"
+        android:textSize="9sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/preview"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/squirrel_btn"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:padding="0dp"
+        android:text="squirrel"
+        android:textSize="9sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frog_btn" />
+
+    <Button
+        android:id="@+id/snake_btn"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:padding="0dp"
+        android:text="snake"
+        android:textSize="9sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squirrel_btn" />
+
+    <Button
+        android:id="@+id/caterpillar_btn"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:padding="0dp"
+        android:text="caterpillar"
+        android:textSize="9sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snake_btn" />
+
+    <Button
+        android:id="@+id/default_btn"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:padding="0dp"
+        android:textSize="9sp"
+        android:text="human"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caterpillar_btn" />
+
+    <ImageButton
+        android:id="@+id/img_capture_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="85dp"
+        android:backgroundTint="@color/black"
+        android:src="@drawable/click"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        android:backgroundTint="@color/black"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="85dp"
+        android:src="@drawable/flip"
+        android:id="@+id/switch_btn"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_capture_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:backgroundTint="@color/black"
+        android:id="@+id/gallery_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="85dp"
+        android:src="@drawable/gallary"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_capture_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

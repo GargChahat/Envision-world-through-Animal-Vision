@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/livecamera"
+        android:icon="@drawable/ic_name2"
+        android:title="Camera" />
+
+    <item
+        android:id="@+id/my_profile"
+        android:icon="@drawable/ic_name2"
+        android:title="My Profile" />
+    <item
+        android:id="@+id/abt_app"
+        android:icon="@drawable/ic_info"
+        android:title="App Description" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_back_arrow"
+        android:title="Log out" />
+
+
+</menu>
